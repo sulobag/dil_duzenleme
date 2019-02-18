@@ -14,10 +14,10 @@
             $text = (string) $x[1];
             $trans = new GoogleTranslate();
             $result = $trans->translate($source, $target, $text);
-            $document_prew = $document_prew.$x[0]."=".$result;  
+            $document_prew = $document_prew.$x[0]."=".$result.";";  
         }
     }
-        
+
   ?>
   <head>
     <meta charset="utf-8">
